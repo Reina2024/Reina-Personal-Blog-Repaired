@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reina's First Blog</title>
+<!-- Common styles and Dark/Ligh theme -->
+ <link rel="stylesheet" href="./assets/css/styles.css">
+ <!-- Style the Form -->
+  <link rel="stylesheet" href="./assets/css/form.css">
+</head>
+<body class="dark">
+    <!-- theme change -->
+    <div>
+      <!-- Header -->
+      <header>
+        <div class="blogs">
+            <a href="./blog.html" class="blogLink">Go to blog</a>
+          </div>
+  
+          <h1>Blog Page</h1>
+          <!-- Theme switcher -->
+          <div class="toggleSwitch row">
+            <div class="col">
+              <p>Dark</p>
+            </div>
+            <label class="switch col">
+              <input type="checkbox" id="themeSwitcher" />
+              <span class="slider round"></span>
+            </label>
+            <div class="col">
+              <p>Light</p>
+            </div>
+          </div>
+        </header>
+        <section class="blogEntry">
+            <!-- logo -->
+            <section class="image">
+              <img class="icon-img" src="./assets/images/darkpalmtrees.jpg" alt="Image" />
+            </section>
+           <!-- Name,Title and Content input -->
+           <div class="formRow">
+            <label for="name" class="formLabel">First Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Your name"
+              class="formInput"
+            />
+          </div>
+
+        
+          <div class="formRow">
+            <label for="title" class="formLabel">Title</label>
+            <input
+              type="text"
+              id="title"
+              placeholder="Your title"
+              class="formInput"
+            />
+          </div>
+        
+          <div class="formRow">
+            <label for="content" class="form-label">Content</label>
+            <textarea
+              id="content"
+              placeholder="Write something..."
+              class="formTextarea"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-block" id="submit-btn">
+            submit
+          </button>
+
+          <div id="msg"></div>
+          </form>
+        </section>
+      </section>
+    </div>
+    <footer>
+      <ul class="footerLinks">
+        <li>
+          <a
+            href="https://reina2024.github.io/portfolio/"
+
+            class="footerLink"
+            target="_blank"
+            >Portfolio</a
+          >
+        </li>
+    </footer>
+<body>
+    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
+</body>
+</html>
