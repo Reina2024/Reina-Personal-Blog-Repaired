@@ -9,7 +9,41 @@
     <!-- blog styles -->
     <link rel="stylesheet" href="./assets/css/blog.css" />
 </head>
-<body>
+<body class="dark">
+    <div>
+      <header>
+        <!-- back button -->
+        <div class="backLink">
+          <a href="./index.html" class="btn">Back to Form</a>
+        </div>
+        <div class="toggleSwitch row">
+          <div class="col">
+            <p>Dark</p>
+          </div>
+          <label class="switch col">
+            <input type="checkbox" id="themeSwitcher" />
+            <span class="slider round"></span>
+          </label>
+          <div class="col">
+            <p>Light</p>
+          </div>
+        </div>
+      </header>
+      <section class="blogsList"></section>
+    </div>
+    <footer>
+     <ul class="footerLinks">
+        <li>
+          <a
+            href="https://reina2024.github.io/portfolio/"
+
+            class="footerLink"
+            target="_blank"
+            >Reina's Portfolio</a
+          >
+        </li>
+    </footer>
+
     <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/blog.js"></script>
 </body>
