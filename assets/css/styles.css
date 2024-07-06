@@ -1,0 +1,217 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    border-bottom: 12px solid;
+    border-style: double;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    margin-right: 2px;
+    width: 50%;
+  }
+  /* light and dark styles */
+  .dark .image {
+    background-color: #025237;
+    background-image:url(../images/darkpalmtrees.jpg); 
+  }
+  
+  .light .image {
+    background-color: #7fddf0;
+    background-image:url(../images/Palmtrees.png);
+  }
+  
+  .icon-img {
+    width: 500px;
+    height: 500px;
+    border-radius: 60%;
+    object-fit: fill;
+    border: 5px;
+    border-style: dotted;
+    padding: 5px;
+  }
+  
+  .blogForm {
+    border-left: 5px solid;
+    border-bottom: 5px solid;
+    width: 50%;
+    margin-left: 5px;
+    text-align: center;
+  }
+  
+  .toggleSwitch {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+  }
+  
+  /*Switch button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 40px;
+  }
+  
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 5px;
+    bottom: 5px;
+    background-color: grey;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  input:checked + .slider {
+    background-color:#e7c920 ;
+  }
+  
+  input:focus + .slider {
+    box-shadow: inset 0px 5px 10px (black),
+      inset 0px -5px 10px (darkgray);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 30px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  
+  /* Dark Mode */
+  .dark {
+    background-color: #025237;
+    color: whitesmoke;
+    height: fit-content;
+  }
+  
+  /* Light Mode */
+  .light {
+    background-color: #7fddf0;
+    color: black;
+    height: fit-content;
+  }
+  
+  .dark .footerLink {
+    color: whitesmoke;
+  }
+  
+  .light .footerLink {
+    color: black;
+  }
+  
+  .blogForm h2 {
+    margin-top: 5px;
+  }
+  
+  footer {
+    display: flex;
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+    align-items: center;
+  }
+  
+  .footerLinks {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2 px;
+    list-style-type: none;
+  }
+  
+  .footerLink {
+    text-decoration: none;
+  }
+  
+  .footerLink:hover {
+    text-decoration: underline;
+  }
+  
+  footer p {
+    margin: 0 auto;
+  }
+  
+  .blogLink {
+    text-decoration: none;
+  }
+  
+  .dark .blogLink {
+    color: white;
+  }
+  
+  .light .blogLink {
+    color: black;
+  }
+  
+  .btn {
+    cursor: pointer;
+    color: whitesmoke;
+    background:black;
+    border: transparent;
+    border-radius: 10%;
+    letter-spacing: 1px;
+    padding: 5px;
+    transition: 0.3s ease-in-out all;
+    text-transform: capitalize;
+    display: inline-block;
+  }
+  
+  .blogs a:hover {
+    text-decoration: underline;
+  }
+  
+  .blogEntry {
+    display: flex;
+    flex: 1;
+    height: 30px;
+  }
+  
