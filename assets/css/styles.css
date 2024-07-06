@@ -1,17 +1,14 @@
 * {
     font-family:Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
-    padding: 0;
+    padding: 5px;
   }
   
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 0;
-    border-bottom: 12px solid;
-    border-style: double;
     width: 100%;
     padding: 12px;
   }
@@ -20,25 +17,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 3px solid;
-    border-bottom: 3px solid;
+    border: 3px double;
     margin-right: 2px;
     width: 50%;
   }
   /* light and dark styles */
   .dark .image {
     background-color: #025237;
-    background-image:url(../images/darkpalmtrees.jpg); 
+
+
   }
   
   .light .image {
     background-color: #7fddf0;
-    background-image:url(../images/Palmtrees.png);
+    
   }
   
   .icon-img {
-    width: 500px;
-    height: 500px;
+    width: fit-content;
+    height: fit-content;
     border-radius: 60%;
     object-fit: fill;
     border: 5px;
@@ -46,13 +43,16 @@
     padding: 5px;
   }
   
-  .blogForm {
-    border-left: 5px solid;
-    border-bottom: 5px solid;
-    width: 50%;
+   .blogForm { 
+    width: auto;
     margin-left: 5px;
     text-align: center;
-  }
+    align-items: center;
+    display: flex;
+    flex: 1;
+    height: auto;
+    border: 3px double;
+   } 
   
   .toggleSwitch {
     display: flex;
@@ -65,7 +65,7 @@
     position: relative;
     display: inline-block;
     width: 75px;
-    height: 40px;
+    height: 30px;
   }
   
 
@@ -149,7 +149,10 @@
   }
   
   .blogForm h2 {
-    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-style: italic;
+    align-self:center;
   }
   
   footer {
@@ -209,9 +212,10 @@
     text-decoration: underline;
   }
   
-  .blogEntry {
-    display: flex;
-    flex: 1;
-    height: 30px;
-  }
+ /* .blogForm {  */
+    /* display: flex; */
+    /* flex: 1; */
+    /* height: auto; */
+  /* } */
+  
   

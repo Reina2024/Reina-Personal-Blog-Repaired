@@ -1,8 +1,9 @@
-.form {
+.blogform {
     max-width: 1200px;
-    border-radius: 5%;
-    padding: 5px;
-    margin: 2px auto;
+    border-radius: 5px;
+    padding: 32px 38px;
+    margin: 50px auto;
+   
   }
   
   .formLabel {
@@ -23,7 +24,7 @@
 }
 
 .formTextarea {
-  height: 20px;
+  height: 50px;
 }
 
 
@@ -50,5 +51,25 @@
   
   ::placeholder {
     font-family: Arial, Helvetica, sans-serif;
-    color: #d90cd6;
+    color: #7fddf0;
   }
+   /* =Media=*/
+ @media screen and (max-width: 768px) { */
+    main,
+    nav, footer, .links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image {
+      display: flex;
+      clip-path: circle(40%);
+      min-height: 350px;
+    }
+  
+    .image h1 {
+      display: flex;
+      text-align: center;
+      left: 12px;
+    }
+}
