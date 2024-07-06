@@ -1,0 +1,31 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+  
+    .blogsList {
+        min-height: 100px;
+      }
+         
+      .blogCard {
+        border: 5px dotted;
+        padding: 25px;
+        margin: 5px;
+        padding-bottom: 0;
+      }
+      
+      .blogCard h2 {
+        border-bottom: 5px dotted;
+      }
+      
+      .blogCard p {
+        padding: 25px 0;
+      }
+      
+      .blogCard p:last-child {
+        margin-bottom: 0;
+        font-style:normal;
+      }
+        
